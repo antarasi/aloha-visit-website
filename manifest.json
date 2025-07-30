@@ -1,29 +1,25 @@
 {
   "manifestVersion": 1,
-  "name": "Aloha Sample Plugin",
+  "name": "Web Browser",
   "version": "1.0.0",
-  "description": "Aloha Sample Plugin",
+  "description": "The agent can visit a website url on the internet directly to provide more accurate results",
   "author": "antarasi",
   "icon": "dist/icon.svg",
   "main": "dist/index.esm.js",
   "tools": [
     {
-      "name": "tellTime",
-      "displayName": "Tell Time",
-      "description": "The assistant can tell the current time",
+      "name": "visitWebsite",
+      "displayName": "Open Website",
+      "description": "The assistant can access any website url on the internet directly to provide more accurate results",
       "parameters": {
         "type": "object",
         "required": [
-          "format"
+          "url"
         ],
         "properties": {
-          "format": {
+          "url": {
             "type": "string",
-            "description": "The format of the time to tell",
-            "enum": [
-              "iso",
-              "long"
-            ]
+            "description": "The URL to visit"
           }
         }
       }
