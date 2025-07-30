@@ -1,0 +1,27 @@
+{
+  "name": "vite-aloha",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "aloha version package.json manifest.json",
+    "build": "tsc && vite build",
+    "test": "tsx --test",
+    "test:watch": "tsx --watch --test"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "aloha-sdk": "^1.2.5",
+    "tsx": "^4.20.3",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.4"
+  }
+}
