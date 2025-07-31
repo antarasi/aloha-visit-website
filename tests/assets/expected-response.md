@@ -1,4 +1,4 @@
-  Simple HTML Page 
+Here's the content fetched from `https://www.sampleurl.com`: 
 
 Welcome to My Simple Page
 =========================

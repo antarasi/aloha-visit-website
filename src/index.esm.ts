@@ -16,6 +16,7 @@ export default class BrowserPlugin extends Plugin {
       .remove('embed')
       .remove('nav')
       .remove('footer')
+      .remove('title')
   }
 
   async toolCall(toolName: string, args: { url: string }): Promise<string> {
@@ -27,8 +28,9 @@ export default class BrowserPlugin extends Plugin {
   }
 
   async visitWebsite(url: string): Promise<string> {
-    const html = await this.getContext().renderUrl(url)
-    const $ = cheerio.load(html)
-    return this.turndownService.turndown($.root().html() || 'No content found :(')
+    const body = await this.getContext().renderUrl(url)
+    const $ = cheerio.load(body)
+    const mdResponse = this.turndownService.turndown($.root().html() || 'No content found :(')
+    return `Here's the content fetched from \`${url}\`: \n\n${mdResponse.trim()}`
   }
 }
