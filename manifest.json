@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "name": "Web Browser",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The agent can visit a website url on the internet directly to provide more accurate results",
   "author": "antarasi",
   "icon": "dist/icon.svg",
@@ -10,7 +10,7 @@
     {
       "name": "visitWebsite",
       "displayName": "Open Website",
-      "description": "The assistant can access any website url on the internet directly to provide more accurate results",
+      "description": "The assistant can fetch the content of any website url on the internet directly to provide more accurate results",
       "parameters": {
         "type": "object",
         "required": [

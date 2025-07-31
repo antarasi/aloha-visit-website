@@ -1,7 +1,7 @@
 {
   "name": "vite-aloha",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.1.0",
   "type": "module",
   "exports": {
     ".": {
@@ -17,13 +17,16 @@
     "test": "tsx --test",
     "test:watch": "tsx --watch --test"
   },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "@types/turndown": "^5.0.5",
+  "dependencies": {
     "aloha-sdk": "^1.2.5",
     "cheerio": "^1.1.2",
+    "turndown": "^7.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@types/node": "^20.0.0",
+    "@types/turndown": "^5.0.5",
     "tsx": "^4.20.3",
-    "turndown": "^7.2.0",
     "typescript": "~5.8.3",
     "vite": "^7.0.4"
   }
