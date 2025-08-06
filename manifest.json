@@ -3,7 +3,7 @@
   "name": "Web Browser",
   "version": "1.1.0",
   "description": "The agent can visit a website url on the internet directly to provide more accurate results",
-  "author": "antarasi",
+  "author": "Aloha",
   "icon": "dist/icon.svg",
   "main": "dist/index.esm.js",
   "tools": [
