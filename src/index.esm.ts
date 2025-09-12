@@ -17,6 +17,7 @@ export default class BrowserPlugin extends Plugin {
       .remove('nav')
       .remove('footer')
       .remove('title')
+      .remove('img')
   }
 
   async toolCall(toolName: string, args: { url: string }): Promise<string> {
