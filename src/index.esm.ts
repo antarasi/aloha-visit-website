@@ -31,6 +31,6 @@ export default class BrowserPlugin extends Plugin {
     const body = await this.getContext().renderUrl(url)
     const $ = cheerio.load(body)
     const mdResponse = this.turndownService.turndown($.root().html() || 'No content found :(')
-    return `Here's the content fetched from \`${url}\`: \n\n${mdResponse.trim()}`
+    return `Here's the content fetched from [${url}](${url}): \n\n${mdResponse.trim()}`
   }
 }
