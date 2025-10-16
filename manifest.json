@@ -10,7 +10,7 @@
     {
       "name": "visitWebsite",
       "displayName": "Open Website",
-      "description": "The agent can use this tool whenever it encounters a website url to visit",
+      "description": "The assistant can summarize the content of any website with this tool. Use it when the user prompt includes a url or when other tools reponse include a url.",
       "parameters": {
         "type": "object",
         "required": [
